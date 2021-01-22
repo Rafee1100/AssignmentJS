@@ -51,7 +51,7 @@ function hotelCost(days) {
         }
         return hotelstaycost;
     }
-    else if(days==0) {
+    else if(days == 0) {
         return "You have not been in the hotel.Welcome to Bay Resort have some cost!!";
     }
     else{
@@ -74,12 +74,9 @@ function megaFriend(friendsname) {
         }
         return largestname;
     }
-    if (friendsname.length === 0) {
+    if (friendsname.length == 0) {
         return "There is no name in the Array.Have some person!"
     }
 }
 
-console.log(kilometerToMeter(23));
-console.log(budgetCalculator(3,5,2));
-console.log(hotelCost(45));
-console.log(megaFriend([]));
+
