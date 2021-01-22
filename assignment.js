@@ -32,7 +32,7 @@ function budgetCalculator(watch, phone, laptop) {
 
 function hotelCost(days) {
     var hotelstaycost;
-    if (days >= 0) {
+    if (days > 0) {
         if (days <= 10) {
             hotelstaycost = 100 * days;
         }
@@ -51,8 +51,11 @@ function hotelCost(days) {
         }
         return hotelstaycost;
     }
-    else {
-        return "You have not been in the hotel.Welcome to Bay Resort have some cost!!"
+    else if(days==0) {
+        return "You have not been in the hotel.Welcome to Bay Resort have some cost!!";
+    }
+    else{
+        return "Number of days can't be negative";
     }
 
 }
