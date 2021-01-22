@@ -74,7 +74,12 @@ function megaFriend(friendsname) {
         }
         return largestname;
     }
-    if (friendsname.length == 0) {
+    if (friendsname.length === 0) {
         return "There is no name in the Array.Have some person!"
     }
 }
+
+console.log(kilometerToMeter(23));
+console.log(budgetCalculator(3,5,2));
+console.log(hotelCost(45));
+console.log(megaFriend([]));
